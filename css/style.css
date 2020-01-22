@@ -48,6 +48,10 @@ body {
   color: #262626;
 }
 
+img {
+  max-width: 100%;
+}
+
 .section {
   padding: 100px 0;
 }
@@ -70,6 +74,7 @@ body {
   color: #507fe1;
   background-color: #ffffff;
   text-transform: uppercase;
+  text-decoration: none;
   font-family: 'Proxima Nova Semibold', sans-serif;
 }
 
@@ -77,9 +82,31 @@ body {
   border: none;
   padding: 25px 45px;
   text-transform: uppercase;
+  text-decoration: none;
   background-color: #507fe1;
   color: #ffffff;
   font-family: 'Proxima Nova Semibold', sans-serif;
+}
+
+.button-fitting {
+  color: #507fe1;
+  background-color: #ffffff;
+}
+
+.button-add {
+  background-color: #7c9fe8;
+  color: #ffffff;
+}
+
+.button-like {
+  height: 30px;
+  width: 30px;
+  padding: 0;
+  border: none;
+}
+
+.button-like__image {
+  display: block;
 }
 
 .bg-secondary {
@@ -97,7 +124,7 @@ body {
 }
 
 .checkbox:checked + label:before {
-  background-color: #507fe1;
+  background: #ffffff url(../img/checkbox.png) no-repeat center;
 }
 
 .checkbox-label {
@@ -463,6 +490,85 @@ body {
   .features-block__item {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
+  }
+}
+
+.catalog-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.catalog__card {
+  margin-bottom: 30px;
+}
+
+.catalog-card {
+  max-width: 570px;
+  position: relative;
+  -webkit-box-shadow: 7px 5px 21px rgba(0, 0, 0, 0.1);
+          box-shadow: 7px 5px 21px rgba(0, 0, 0, 0.1);
+}
+
+.catalog-card__buttons {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.catalog-card__button {
+  height: 30px;
+  padding: 10px;
+  border: none;
+  font-size: 11px;
+  text-transform: uppercase;
+}
+
+.catalog-card__tag {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 10px;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: rgba(80, 127, 225, 0.6);
+}
+
+.catalog-card__image {
+  display: block;
+}
+
+.catalog__link {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.catalog__link-more {
+  display: inline-block;
+  margin-bottom: 24px;
+}
+
+.catalog__description {
+  display: block;
+}
+
+@media (max-width: 1199px) {
+  .catalog-block {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .catalog-card {
+    max-width: 500px;
   }
 }
 /*# sourceMappingURL=style.css.map */

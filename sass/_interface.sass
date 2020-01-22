@@ -2,6 +2,9 @@ body
   +light
   color: $text-color
 
+img
+  max-width: 100%
+
 .section
   padding: 100px 0
   &__title
@@ -20,16 +23,31 @@ body
   color: $primary
   background-color: #ffffff
   text-transform: uppercase
+  text-decoration: none
   +bold
 
 .button
   border: none
   padding: 25px 45px
   text-transform: uppercase
+  text-decoration: none
 
   background-color: $primary
   color: #ffffff
   +bold
+  &-fitting
+    color: $primary
+    background-color: #ffffff
+  &-add
+    background-color: lighten($primary, 10%)
+    color: #ffffff
+  &-like
+    height: 30px
+    width: 30px
+    padding: 0
+    border: none
+    &__image
+      display: block
 
 .bg-secondary
   background: $bg-secondary
@@ -42,7 +60,7 @@ body
 .checkbox
   display: none
   &:checked + label:before
-    background-color: $primary
+    background: #ffffff url(../img/checkbox.png) no-repeat center
   &-label
     display: flex
     align-items: center
