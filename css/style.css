@@ -734,7 +734,7 @@ img {
   bottom: -80px;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1199px) {
   .price-block {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
