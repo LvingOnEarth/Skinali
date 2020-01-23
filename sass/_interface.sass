@@ -35,6 +35,8 @@ img
   background-color: $primary
   color: #ffffff
   +bold
+  &:hover
+    cursor: pointer
   &-fitting
     color: $primary
     background-color: #ffffff
@@ -75,8 +77,10 @@ img
       border: 1px solid #dddddd
 
 @media (max-width: 576px)
-  .button-o
+  .button
     font-size: 10px
+    &-o
+      font-size: 10px
   .section
     padding: 60px 0
     &-title
