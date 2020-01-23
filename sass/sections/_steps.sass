@@ -1,0 +1,40 @@
+.step
+  position: relative
+  text-align: center
+  &:not(:last-child)
+    &::before
+      content: ''
+      display: block
+      width: 100%
+      height: 3px
+      background-color: #666666
+      position: absolute
+      top: 28%
+      right: -63%
+  &__title
+    font-size: 18px
+  &__text
+    max-width: 160px
+    margin: auto
+    margin-bottom: 30px
+  &s
+    &-block
+      display: flex
+      flex-wrap: wrap
+      justify-content: space-between
+
+@media (max-width: 1199px)
+  .step
+    &:not(:last-child)
+      &::before
+        width: 78%
+        right: -40%
+@media (max-width: 991px)
+  .step
+    flex-basis: 33%
+    &:not(:last-child)
+      &::before
+        display: none
+@media (max-width: 768px)
+  .step
+    flex-basis: 100%
