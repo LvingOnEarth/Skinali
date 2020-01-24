@@ -442,6 +442,9 @@ img {
   .offer-block {
     background-position: center right -120px;
   }
+  .offer__subtitle {
+    max-width: 700px;
+  }
 }
 
 @media (max-width: 991px) {
@@ -876,5 +879,27 @@ img {
   height: 10px;
   border: 10px solid transparent;
   border-top: 10px solid #fff;
+}
+
+.factory-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.factory-block__text {
+  margin-left: 70px;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  font-size: 20px;
+}
+
+.factory-block__image {
+  margin: 20px 0;
 }
 /*# sourceMappingURL=style.css.map */
