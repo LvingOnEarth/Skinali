@@ -664,6 +664,13 @@ img {
   position: relative;
   -webkit-box-shadow: 7px 5px 21px rgba(0, 0, 0, 0.1);
           box-shadow: 7px 5px 21px rgba(0, 0, 0, 0.1);
+  overflow-y: hidden;
+}
+
+.catalog-card:hover .catalog-card__buttons {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
 }
 
 .catalog-card__buttons {
@@ -673,6 +680,11 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-transition: .2s;
+  transition: .2s;
+  opacity: 0;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
 }
 
 .catalog-card__button {
@@ -681,6 +693,10 @@ img {
   border: none;
   font-size: 11px;
   text-transform: uppercase;
+}
+
+.catalog-card__button:focus {
+  outline: none;
 }
 
 .catalog-card__tag {
