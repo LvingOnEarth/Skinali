@@ -7,6 +7,7 @@
   <title>Фабрика скинали</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/twentytwenty.css">
 </head>
 <body>
 
@@ -464,6 +465,42 @@
       <!-- /.container -->
     </section>
     <!-- /.section steps -->
+    <section class="section before">
+      <div class="container">
+        <h2 class="section-title section__title">До и после</h2>
+        <div class="before-slider-wrap">
+          <div class="before-slider">
+            <div class="before-slider__item">
+              <div class="before-after">
+                <img src="img/before/sample-before.png" alt="">
+                <img src="img/before/sample-after.png" alt="">
+              </div>
+            </div>
+            <div class="before-slider__item">
+              <div class="before-after">
+                <img src="img/before/sample-before.png" alt="">
+                <img src="img/before/sample-after.png" alt="">
+              </div>
+            </div>
+            <div class="before-slider__item">
+              <div class="before-after">
+                <img src="img/before/sample-before.png" alt="">
+                <img src="img/before/sample-after.png" alt="">
+              </div>
+            </div>
+          </div>
+          <button class="arrow arrow-left">
+            <img src="img/before/arrow-left.png" alt="">
+          </button>
+          <button class="arrow arrow-right">
+            <img src="img/before/arrow-right.png" alt="">
+          </button>
+        </div>
+        <!-- /.before-slider-wrap -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.section before -->
     <section class="section reviews bg-secondary">
       <div class="container">
         <h2 class="section-title section__title">
@@ -630,5 +667,25 @@
   
   <!-- Подключение виджета обратной связи через соц. сети -->
   <script type="text/javascript" src="https://spikmi.com/Widget?Id=2519"></script>
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+  <script src="js/jquery.event.move.js"></script>
+  <script src="js/jquery.twentytwenty.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script>
+    $(window).load(() => {
+      $(".before-after").twentytwenty({
+        before_label: 'Без скинали',
+        after_label: 'Со скинали',
+      });
+
+      $(".before-slider").slick({
+        draggable: false,
+        dots: true,
+        dotsClass: 'before-slider__dots',
+        prevArrow: $('.arrow-left'),
+        nextArrow: $('.arrow-right')
+      });
+    });
+  </script>
 </body>
 </html>

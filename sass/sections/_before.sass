@@ -1,0 +1,41 @@
+.before
+  &-slider
+    &-wrap
+      position: relative
+      margin: auto
+      max-width: 640px
+    &__dots
+      padding: 0
+      margin: auto
+      margin-top: 30px
+      display: flex
+      justify-content: center
+      align-items: center
+      list-style: none
+      li
+        width: 10px
+        height: 10px
+        background-color: #d1d1d1
+        border-radius: 50%
+        margin: 5px
+        &:hover
+          cursor: pointer
+        &.slick-active
+          background-color: #5b7fda
+      button
+        display: none
+.arrow
+  border: none
+  background-color: transparent
+  &:focus
+    outline: none
+  &-left
+    position: absolute
+    top: 45%
+    left: -12%
+    transform: translate(12%, -45%)
+  &-right
+    position: absolute
+    top: 45%
+    right: -10%
+    transform: translate(10%, -45%)
