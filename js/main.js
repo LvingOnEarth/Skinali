@@ -30,7 +30,7 @@ $(window).load(() => {
   // Настройка ссылок
   $("a[href^='#']").click(function() {
     const _href = $(this).attr("href");
-    $("html, body").animate({scrollTop: $(_href).offset().top - 130 + "px"});
+    $("html, body").animate({scrollTop: $(_href).offset().top - 25 + "px"});
     return false;
   });
   $('[type="tel"]').mask("+ 7 (999) 999-99-99");
